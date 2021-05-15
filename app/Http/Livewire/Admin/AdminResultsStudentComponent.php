@@ -26,6 +26,9 @@ class AdminResultsStudentComponent extends Component
            $q->where('year_type' , $year_type);
         })->get();
 
+
+
+
         return view('livewire.admin.admin-results-student-component',compact('results'))->layout('layouts.base');
     }
 }
